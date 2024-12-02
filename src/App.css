@@ -1,0 +1,113 @@
+/* App.css */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.app{
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .chat-window {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: black;
+  }
+  
+  .message {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+  
+  .user-message {
+    align-self: flex-end;
+    background-color: #007aff;
+    color: #ffffff;
+    border-bottom-right-radius: 0;
+  }
+  
+  .bot-message {
+    align-self: flex-start;
+    background-color: #f1f2f6;
+    color: #333333;
+    border-bottom-left-radius: 0;
+  }
+  
+  .loading {
+    align-self: flex-start;
+    font-style: italic;
+    color: #666666;
+    font-size: 13px;
+  }
+  
+  .input-area {
+    display: flex;
+    border-top: 1px solid #e0e0e0;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+  
+  .input-area input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .input-area input::placeholder {
+    color: #cccccc;
+  }
+  
+  .input-area button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007aff;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .input-area button:disabled {
+    background-color: #a0c8ff;
+    cursor: not-allowed;
+  }
+  
+  .input-area button:hover:not(:disabled) {
+    background-color: #005bb5;
+  }
+
+  .outputImg{
+    width: 60vh;
+  }
+  
